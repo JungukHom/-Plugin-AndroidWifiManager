@@ -45,11 +45,7 @@ public class WifiConnectorSample : MonoBehaviour
 
     private void OnEnableWifiButtonPressed()
     {
-        bool result = WifiConnector.Instance.SetWifiEnabled(true);
-        if (result)
-            WifiConnector.Instance.Toast("와이파이가 활성화되었습니다");
-        else
-            WifiConnector.Instance.Toast("와이파이 활성화에 실패하였습니다");
+        WifiConnector.Instance.SetWifiEnabled(true);
     }
 
     private void OnDisableWifiButtonPressed()
@@ -59,7 +55,7 @@ public class WifiConnectorSample : MonoBehaviour
 
     private void OnConnectWifiButtonPressed()
     {
-        bool result = WifiConnector.Instance.ConnectWifi(input_wifi_ssid.text.Trim(), input_wifi_password.text.Trim());
+        bool result = WifiConnector.Instance.Connect(input_wifi_ssid.text.Trim(), input_wifi_password.text.Trim());
         if (result)
             WifiConnector.Instance.Toast("와이파이가 성공적으로 연결되었습니다");
         else

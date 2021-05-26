@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{40224781-297B-FF75-A243-97B67AADF7AB}</ProjectGuid>
+    <ProjectGuid>{F1EB233A-B607-5FB3-5982-D6798ABDB8E6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,36 +64,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\WifiConnector\Scripts\CSVReader.cs" />
     <Compile Include="Assets\WifiConnector\Scripts\WifiConnector.cs" />
     <Compile Include="Assets\WifiConnector\Scripts\WifiConnectorSample.cs" />
-    <Compile Include="Assets\WifiConnector\Scripts\WifiInfoReader.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Study/WifiConnectorSample/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/GithubRepository/-Plugin-AndroidWifiManager/Project/Unity/AndroidWifiManagerSample/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

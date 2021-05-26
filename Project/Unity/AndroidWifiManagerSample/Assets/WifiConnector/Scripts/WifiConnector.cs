@@ -33,7 +33,7 @@ public class WifiConnector : MonoBehaviour
 
         unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-        wifiConnector = new AndroidJavaObject("com.fakeeyes.wificonnector.WifiConnector");
+        wifiConnector = new AndroidJavaObject("com.developer0223.androidwifimanager.AndroidWifiManager");
         wifiConnector.Call("initialize", currentActivity);
     }
 
@@ -42,9 +42,9 @@ public class WifiConnector : MonoBehaviour
         wifiConnector.Call("showToast", text);
     }
 
-    public bool SetWifiEnabled(bool enable)
+    public void SetWifiEnabled(bool enable)
     {
-        return wifiConnector.Call<bool>("setWifiEnabled", enable);
+        wifiConnector.Call("setWifiEnabled", enable);
     }
 
     public string[] GetWifiList()
@@ -52,9 +52,9 @@ public class WifiConnector : MonoBehaviour
         return wifiConnector.Call<string[]>("getWifiList");
     }
 
-    public bool ConnectWifi(string ssid, string password)
+    public bool Connect(string ssid, string password, bool wpa = true)
     {
-        return wifiConnector.Call<bool>("connect", ssid, password);
+        return wifiConnector.Call<bool>("connect", ssid, password, wpa);
     }
 
     public bool DisconnectWifi()

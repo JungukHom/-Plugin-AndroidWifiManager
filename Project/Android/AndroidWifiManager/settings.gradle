@@ -1,2 +1,3 @@
+include ':AndroidWifiManager'
 include ':app'
 rootProject.name = "AndroidWifiManager"
