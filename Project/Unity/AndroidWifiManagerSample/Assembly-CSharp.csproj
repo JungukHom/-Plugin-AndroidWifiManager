@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\WifiConnector\Scripts\CSVReader.cs" />
     <Compile Include="Assets\WifiConnector\Scripts\WifiConnector.cs" />
     <Compile Include="Assets\WifiConnector\Scripts\WifiConnectorSample.cs" />
     <Reference Include="Unity.Timeline.Editor">

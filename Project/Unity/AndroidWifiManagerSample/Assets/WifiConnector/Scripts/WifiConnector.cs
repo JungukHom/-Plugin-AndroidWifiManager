@@ -61,4 +61,9 @@ public class WifiConnector : MonoBehaviour
     {
         return wifiConnector.Call<bool>("disconnect");
     }
+
+    public string GetAndroidRootPath()
+    {
+        return wifiConnector.Call<string>("getRootPath");
+    }
 }

@@ -14,7 +14,8 @@ public class WifiConnectorSample : MonoBehaviour
 {
     public Button btn_enable_wifi;
     public Button btn_disable_wifi;
-    public Button btn_connect_wifi;
+    public Button btn_connect_wifi_unity;
+    public Button btn_connect_wifi_storage;
     public Button btn_disconnect_wifi;
     public Button btn_show_wifi_list;
 
@@ -35,7 +36,8 @@ public class WifiConnectorSample : MonoBehaviour
     {
         btn_enable_wifi.onClick.AddListener(OnEnableWifiButtonPressed);
         btn_disable_wifi.onClick.AddListener(OnDisableWifiButtonPressed);
-        btn_connect_wifi.onClick.AddListener(OnConnectWifiButtonPressed);
+        btn_connect_wifi_unity.onClick.AddListener(OnConnectWifiUnityButtonPressed);
+        btn_connect_wifi_storage.onClick.AddListener(OnConnectWifiStorageButtonPressed);
         btn_disconnect_wifi.onClick.AddListener(OnDisconnectWifiButtonPressed);
         btn_show_wifi_list.onClick.AddListener(OnShowWifiListButtonPressed);
 
@@ -53,8 +55,19 @@ public class WifiConnectorSample : MonoBehaviour
         WifiConnector.Instance.SetWifiEnabled(false);
     }
 
-    private void OnConnectWifiButtonPressed()
+    private void OnConnectWifiUnityButtonPressed()
     {
+        bool result = WifiConnector.Instance.Connect(input_wifi_ssid.text.Trim(), input_wifi_password.text.Trim());
+        if (result)
+            WifiConnector.Instance.Toast("와이파이가 성공적으로 연결되었습니다");
+        else
+            WifiConnector.Instance.Toast("와이파이 연결에 실패하였습니다");
+    }
+
+    private void OnConnectWifiStorageButtonPressed()
+    {
+        string path = WifiConnector.Instance.GetAndroidRootPath();
+
         bool result = WifiConnector.Instance.Connect(input_wifi_ssid.text.Trim(), input_wifi_password.text.Trim());
         if (result)
             WifiConnector.Instance.Toast("와이파이가 성공적으로 연결되었습니다");
